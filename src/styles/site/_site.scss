@@ -310,13 +310,18 @@ section {
 
 .trigger {
     opacity: 0;
-    transition: all 150ms linear;
-    transform: none;
+    transition: all 200ms linear;
+    transform: translateY(50px);
     filter: blur(20px);
 
+    &.delay {
+        transition: all 300ms linear;
+        transform: translateY(75px);
+    }
+
     &.triggered {
+        transform: none;
         opacity: 1;
-        transform: translateX(-50px);
         filter: none;
     }
 }
