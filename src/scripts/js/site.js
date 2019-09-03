@@ -7,7 +7,9 @@ $(document).ready(function() {
 //functions start here
 
 function loadOut() {
-    console.lot("loaded");
+    setTimeout(function(){
+  $('.loading-screen').addClass('loaded');
+}, 2000);
 }
 
 function menuOpen() {
